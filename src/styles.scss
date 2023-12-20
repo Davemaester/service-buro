@@ -1,0 +1,13 @@
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    grid-gap: 1.5rem;
+
+    .card-thumbnail {
+        position: relative;
+
+        img {
+            width: 70%;
+        }
+    }
+}

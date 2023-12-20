@@ -1,0 +1,8 @@
+<div *ngIf="books$ | async as list">
+  <div class="card-grid">
+    <div *ngFor="let book of list">
+      <app-card [book]="book"></app-card>
+      <a [routerLink]="book.id">Details</a>
+    </div>
+  </div>
+</div>
